@@ -1,0 +1,156 @@
+*{margin: 0%}
+
+/*nagłówek*/
+#navbar{
+height: 2.5em;
+width: 100%;
+background-color: gray;
+position: relative;
+color: whitesmoke;
+}
+#navbar img{
+    padding: 0.1em;
+    align-items: center;
+}
+.contactinfo{
+    float: left;
+    position: relative;
+  
+}
+.contactinfo a:link{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.socialmedia{
+    position: relative;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* takeme*/
+#takeme {
+  background-color: rgb(236, 230, 236);
+  width: 100%; 
+  flex-wrap: wrap;
+  height: 14em;
+  
+}
+#logo{
+    float: left;
+    height: 14em;
+}
+
+#rightbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #rightbar li {
+    float: left;
+  }
+  
+  #rightbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+
+/*slide*/
+#slide{
+height: 14em;
+width: 100%;
+background-color: red;
+position: relative;
+}
+
+/*recomends*/
+#recomends{
+height: 31.5em;
+width: 100%;
+background-color: aquamarine;
+position: relative;
+}
+.rec{
+height: 10.5em;
+width: 100%;
+background-color: firebrick;
+float: left;
+}
+
+
+/*Cookers*/
+#cookers{
+height: 31.5em;
+width: 100%;
+background-color: aquamarine;
+position: relative;
+}
+.cooker{
+height: 10.5em;
+width: 100%;
+background-color: rgb(139, 92, 92);
+float: left;
+}
+
+/*Contact Form*/
+#contactform{
+height: 21em;
+width: 100%;
+background-color: rgb(59, 70, 100);
+float: left;
+position: relative;
+}
+.form{
+height: 10.5em;
+width: 100%;
+background-color: fuchsia;
+float: left;
+}
+.map{
+height: 10.5em;
+width: 100%;
+background-color: yellowgreen;
+float: left;
+}
+
+/*footer*/
+#footer{
+    clear: both;
+    position: relative;
+    height: 2.5em;
+    width: 100%;
+    background-color: limegreen;
+    }
+
+    @media (max-width: 768px) { 
+        .contactinfo {
+            height: 2.5em;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+        }
+        #takeme{
+            display: none;
+        }
+     }
