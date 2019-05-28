@@ -27,39 +27,29 @@ color: whitesmoke;
     text-align: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* takeme*/
 #takeme {
   background-color: rgb(236, 230, 236);
   width: 100%; 
   flex-wrap: wrap;
-  height: 14em;
-  
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 #logo{
     float: left;
-    height: 14em;
+    height: 150px;
 }
-
+#logo img{
+    height: 150px;
+    width: 250px;    
+}
 #rightbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    margin-left: 500px;
   }
   
   #rightbar li {
@@ -68,21 +58,136 @@ color: whitesmoke;
   
   #rightbar li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   
 
 /*slide*/
 #slide{
-height: 14em;
+height: 800px;
 width: 100%;
 background-color: red;
 position: relative;
 }
+
+slider > * {
+    position: absolute;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    background-color: #1f1f1f;
+    -webkit-animation: slide 12s infinite;
+    -moz-animation: slide 12s infinite;
+    -o-animation: slide 12s infinite;
+    animation: slide 12s infinite;
+    overflow: hidden;
+  }
+  
+  slide:nth-child(1) {
+    left: 0%;
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    -o-animation-delay: -1s;
+    animation-delay: -1s;
+     background-image: url(../img/restaruant1.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  
+  
+  slide:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    background-image: url(../img/restaurant2.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  slide:nth-child(3) {
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    background-image: url(../img/restaurant3.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  slide:nth-child(4) {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s;
+    background-image: url(../img/restaurant4.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  
+  slide p {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 20vh;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30vh;
+    color: white;
+    text-shadow: 0px 0px 500px black;
+  }
+  
+  
+  
+  
+  @-webkit-keyframes slide {
+    0% {left: 100%; width: 100%} 
+    5% {left: 0%;} /* IN */
+    25% {left: 0%;} /*SHOW*/
+    30% {left: -100%; width: 100%;} /*OUT*/
+    30.00001% {left: -100%; width: 0%}
+    100% {left: 100%;width: 0%;} /*SLEEP*/
+  }
+  
+  @-moz-keyframes slide {
+    0% {left: 100%; width: 100%} 
+    5% {left: 0%;} /* IN */
+    25% {left: 0%;} /*SHOW*/
+    30% {left: -100%; width: 100%;} /*OUT*/
+    30.00001% {left: -100%; width: 0%}
+    100% {left: 100%;width: 0%;} /*SLEEP*/
+  }
+  
+  @-o-keyframes slide {
+    0% {left: 100%; width: 100%} 
+    5% {left: 0%;} /* IN */
+    25% {left: 0%;} /*SHOW*/
+    30% {left: -100%; width: 100%;} /*OUT*/
+    30.00001% {left: -100%; width: 0%}
+    100% {left: 100%;width: 0%;} /*SLEEP*/
+  }
+  
+  @keyframes slide {
+    0% {left: 100%; width: 100%} 
+    5% {left: 0%;} /* IN */
+    25% {left: 0%;} /*SHOW*/
+    30% {left: -100%; width: 100%;} /*OUT*/
+    30.00001% {left: -100%; width: 0%}
+    100% {left: 100%;width: 0%;} /*SLEEP*/
+  }
+  
+
+
+
+
+
 
 /*recomends*/
 #recomends{
@@ -150,7 +255,19 @@ float: left;
             display: flex;
             align-items: center;
         }
-        #takeme{
+        #logo img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        #rightbar{
             display: none;
         }
+        #slide{
+            height: 14em;
+            width: 100%;
+            background-color: red;
+            position: relative;
+            }
      }
