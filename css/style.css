@@ -186,13 +186,16 @@ slider > * {
   
 /*recomends*/
 #recommends{
-height: 94.5em;
+height: 100.5em;
 width: 100%;
 position: relative;
 }
 #recommends h1{
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Amatic SC', cursive;
+  color: #1f1f1f;
+  margin-top: 1em;
+  font-size: 6em;
 }
 .rec{
 height: 31.5em;
@@ -231,12 +234,15 @@ color: white;
 
 /*Cookers*/
 #cookers{
-height: 94.5em;
+height: 100.5em;
 width: 100%;
 position: relative;
 }
 #cookers h1 {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 6em;
+  margin-top: 1em;
 
 }
 .cooker{
@@ -277,23 +283,61 @@ float: left;
 
 /*Contact Form*/
 #contactform{
-height: 21em;
+height: 31.5em;
 width: 100%;
-background-color: rgb(59, 70, 100);
 float: left;
 position: relative;
+text-align: center;
+
 }
 .form{
-height: 10.5em;
+height: 31.5em;
 width: 100%;
-background-color: fuchsia;
 float: left;
+position: relative;
+width: 50%;
+}
+.form a{
+  text-decoration: none;
+  color: black;
+  margin-right: 1em;
+  vertical-align: middle;
+} 
+
+.form label{
+  width: 200px;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 20px;
+  margin-bottom: 0.5em;
+}
+
+.form input{
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.form select{
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 10px;
 }
 .map{
-height: 10.5em;
-width: 100%;
-background-color: yellowgreen;
-float: left;
+  height: 31.5em;
+  width: 100%;
+  float: right;
+  width: 40%;
+  margin-right: 3em; 
+  }
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:27.5em;
 }
 
 /*footer*/
