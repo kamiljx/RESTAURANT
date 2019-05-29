@@ -95,7 +95,7 @@ slider > * {
     -moz-animation-delay: -1s;
     -o-animation-delay: -1s;
     animation-delay: -1s;
-     background-image: url(../img/restaruant1.jpg);
+     background-image: url(../img/restaruant1.png);
     background-size: cover;
     background-position: bottom;
   }
@@ -183,26 +183,43 @@ slider > * {
     100% {left: 100%;width: 0%;} /*SLEEP*/
   }
   
-
-
-
-
-
-
 /*recomends*/
 #recomends{
-height: 31.5em;
+height: 94.5em;
 width: 100%;
-background-color: aquamarine;
 position: relative;
 }
+#recomends h1{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .rec{
-height: 10.5em;
+height: 31.5em;
 width: 100%;
 background-color: firebrick;
 float: left;
+color: white;
 }
-
+.recimage{
+  height: 31.5em;
+  width: 30%;
+  float: left;
+}
+.recimage img{
+  max-height: 60%;
+  max-width: 80%;
+  display: block;
+  margin: 10% auto; 
+  
+}
+.recinfo{
+  background-color: blue;
+  height: 31.5em;
+  float: right;
+  width: 70%;
+  text-align: center;
+  font-size: 2.2vh;
+}
 
 /*Cookers*/
 #cookers{
@@ -271,14 +288,32 @@ float: left;
             position: relative;
             margin: auto;
             }
-            slide p {
-                font-family: 'Sue Ellen Francisco', cursive;
-                font-size: 3em;
-                text-align: center;
-                display: inline-block;
-                width: 100%;
-                margin-top: 40%;
-                color: white;
-                text-shadow: 0px 0px 500px black;
-              }
+        #slide p {
+          font-family: 'Sue Ellen Francisco', cursive;
+          text-align: center;
+          font-size: 3em;
+          width: 100%;
+          display: inline-block;
+          color: white;
+          margin-top: 40%;
+          text-shadow: 0px 0px 500px black;
+          }
+          .recimage{
+            float: left;
+            width: 100%;
+            position: relative;
+            height: 15em;
+          }
+          .recimage img{
+            max-width: 80%;
+            max-height: 90%;
+          }
+          .recinfo{
+            float: left;
+            width: 100%;
+            position: relative;
+            height: 10em;
+            align-items: center;
+
+          }
      }
