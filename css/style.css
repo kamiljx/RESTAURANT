@@ -184,12 +184,12 @@ slider > * {
   }
   
 /*recomends*/
-#recomends{
+#recommends{
 height: 94.5em;
 width: 100%;
 position: relative;
 }
-#recomends h1{
+#recommends h1{
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -209,7 +209,7 @@ color: white;
   max-height: 60%;
   max-width: 80%;
   display: block;
-  margin: 10% auto; 
+  margin: 50% auto; 
   
 }
 .recinfo{
@@ -219,6 +219,13 @@ color: white;
   width: 70%;
   text-align: center;
   font-size: 2.2vh;
+}
+.recinfo p{
+  max-height: 60%;
+  max-width: 80%;
+  display: block;
+  margin: 10% auto; 
+
 }
 
 /*Cookers*/
@@ -307,6 +314,7 @@ float: left;
           .recimage img{
             max-width: 80%;
             max-height: 90%;
+            margin: 0 auto;
           }
           .recinfo{
             float: left;
