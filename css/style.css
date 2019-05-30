@@ -7,9 +7,9 @@ body{
 #navbar{
 height: 2.5em;
 width: 100%;
-background-color: gray;
+background-color: 	#CDCDC3;
 position: relative;
-color: whitesmoke;
+color: rgb(160, 151, 151);
 }
 #navbar img{
     padding: 0.1em;
@@ -213,6 +213,7 @@ color: white;
   max-width: 80%;
   display: block;
   margin: 20% auto; 
+  border-radius: 5%;
   
 }
 .recinfo{
@@ -261,6 +262,7 @@ float: left;
   max-width: 80%;
   display: block;
   margin: 20% auto; 
+  border-radius: 5%;
   
 }
 .cokinfo{
@@ -307,9 +309,8 @@ width: 50%;
 .form label{
   width: 200px;
   display: inline-block;
-  font-size: 25px;
+  font-size: 1em;
   line-height: 20px;
-  margin-bottom: 0.5em;
 }
 
 .form input{
@@ -346,8 +347,10 @@ width: 50%;
     position: relative;
     height: 2.5em;
     width: 100%;
-    background-color: limegreen;
+    background-color: 	#CDCDC3	;
+    text-align: center; 
     }
+
 
     @media (max-width: 768px) { 
         .contactinfo {
@@ -417,5 +420,28 @@ width: 50%;
             position: relative;
             height: 10em;
             align-items: center;
+          }
+          #contactform{
+            height: 31.5em;
+            width: 100%;
+            float: left;
+            position: relative;
+            text-align: center;
+          }
+          .form{
+            width: 100%;
+            position: absolute;
+            height: 15em;
+            font-size: 0.8em;
+            float: left;
+          }
+          .map{
+            float: left;
+            width:  auto;
+            margin: 0 2em 0 2em;
+            position: absolute;
+            height: 10em;
+            align-items: center;
+            display: none;
           }
      }
